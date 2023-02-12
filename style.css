@@ -1,0 +1,136 @@
+
+body{
+  background: #7b4397;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+header {  
+  background: #ff0084;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+    left: 0;  
+    right:0;  
+    top: px;  
+    height: 80px;  
+    display:flex ;  
+    align-items: center;  
+    box-shadow: 0 0 25px 0 black;  
+    }  
+    header * {  
+    display: inline;  
+    }  
+    header li {  
+    margin: 20px;  
+    }  
+    header li a {  
+    color: blue;  
+    text-decoration: none;
+    font-size: 20; 
+    font-weight: 200; 
+    
+    }
+
+
+    
+
+    #sign{
+ 
+        margin-top: 25;
+        position: relative;
+        text-align: left;
+        left: 1100;
+        
+    }
+.button {
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    border-style:hidden;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+  }
+  
+  
+  #get{
+    background-image: url(pictures/coding.jpeg) ;
+    font-size: 100px;
+  }
+  #Quto{
+    background-image: url(pictures/rosecodes.jpg);
+font-family: 'Kalam', cursive;
+font-size:50px ;
+color: #f3f043;
+  }
+  #footer {
+    background: #C04848;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 30px 0;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    height: 450;
+
+  }
+  
+  #footer .footer-top .btn-subscribe{
+    font-weight: bolder;
+    background-color: var(--white);
+    color: #212b4b;
+    border: none;
+    border-left: 1px solid #212b4b;
+  }
+  
+  #footer .footer-top .btn-subscribe:hover{
+    background: #C04848;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: var(--white);
+    border: 1px solid white;
+  }
+  
+  #footer .copyright {
+   text-align: center;
+    color: #fff;
+    
+  }
+  
+  #footer .white{    
+    color: #fff;
+    margin: 15;
+    padding: 5;
+  }
+  
+  #footer .white:hover{    
+    color: rgb(123, 142, 207);
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+  }
+  
+ .col-13 {
+  background-color: rgb(15, 15, 15);
+ }
+ .signup{
+  text-align: center;
+ }
+ 

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>css</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!--link fa fa icons-->
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+          /*container styling*/
+  .container1 {
+  display: flex;
+  align-items: center;
+  }
+
+ 
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+/*example images*/
+#album
+  {
+   text-align: center;
+    border-bottom: 3px solid #689F38;   
+    padding: 2px;
+    
+    height: 400px;
+  }
+  /*next example button modify*/
+  #button{
+    border-style:hidden;
+    border-radius: 50px;
+    color: rgb(202, 17, 109);
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+  }
+  p{
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  /*go to schedule button*/
+  .but {
+    background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-style:hidden;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 40px;
+    text-align:end;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+   
+}
+/*align goto schedule button*/
+.bottom{
+    text-align: end;
+    margin-bottom: 80px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="pictures/logore.png" width="150" height="150"></a> 
+        <!--make navigation-->
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="courseDeatails.html">Course Details</a></li>&nbsp;&nbsp;
+                <li><a href="courseSchedule.html">Course Schedule</a></li>&nbsp;&nbsp;
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+      <!--Making heading to web page-->
+      <div class="container1">
+        <div class="text">
+           <p style="font-size: 60px;">CSS-Cascading Style Sheet</p>
+       </div>
+       <div class="image1">
+           <img  src="pictures/css1.png" style="padding: 160px; width: 80px;height: 80px;">
+       </div>
+   </div>
+
+   <section>
+    <h1>What is CSS?</h1>
+    <ul style="font-size: 20px;">
+    <li>CSS stands for Cascading Style Sheets</li>
+    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+    <li>External stylesheets are stored in CSS files</li>
+    </ul>
+    </section>
+    <h1>Why Use CSS?<h1>
+
+    <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+    
+    
+    <p>HTML was NEVER intended to contain tags for formatting a web page!<br>
+    
+    HTML was created to describe the content of a web page, like:<br>
+    
+    
+    <p>When tags like , and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers.
+     Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.<br>
+    
+    To solve this problem, the World Wide Web Consortium (W3C) created CSS.<br>
+    
+    CSS removed the style formatting from the HTML page!<br>
+    
+    CSS Saves a Lot of Work!<br>
+    The style definitions are normally saved in external .css files.<br>
+    
+    With an external stylesheet file, you can change the look of an entire website by changing just one file!<br>
+   
+    
+   <section >
+    <h1>Examples</h1>
+    <img id="album" src="pictures/images/cs1.png" >
+ <div>
+        <button type="button" onclick="nextslide()" id="button"> Next Example  </button>
+        </div>
+   </section>
+      <!--set button to goto schedule-->
+   <section class="bottom">
+    <a href="cssSc.html">
+        <button class="but">Go to CSS Schedule</button>
+    </a>
+   
+</section>
+
+   <!--simple java script to move example-->
+   <script>
+    var images = ["pictures/images/cs1.png","pictures/images/cs2.jpg","pictures/images/cs3.png"]
+var i = 0;
+function nextslide() { 
+ 
+   if(i == 3)
+     {
+       i=0;
+     }
+   
+    document.getElementById("album").src = images[i];
+  i++;
+ 
+}
+
+   </script>
+
+<!--making footer-->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center order-md-1 mb-3">
+                    <div class="input-group">
+                        <img src="pictures/logore.png" width="250" height="250"> 
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-12 col-md-6 text-center order-md-3">
+                    <p style="font-size: 30px;">ABC <br> Learning</>
+                </div> 
+                
+                
+                <div class="col-12 col-md-6 text-center order-md-2" style="text-align: end;">
+                    <h1> 
+                        
+                        <a target="_blank" href="https://www.facebook.com/" class="white"><i class="fab fa-facebook-square"></i></a>
+                        <a target="_blank" href="mailto:someone@example.com?Subject=Hello" class="white"> <i  class="fa fa-envelope-open" aria-hidden="true" style="font-size:36px"></i></a>
+                        
+                    </h1> 
+                    
+                </div>
+                <div class="col-12 col-md-6 text-center order-md-4" style="text-align: end;">
+                     <p  style="font-size: 30px;font-weight: bold;"><a href="sitemap.html" style="color: black;text-decoration: none;">Site Map /</a> <a href="privacypolicy.html" style="color:black;text-decoration: none;">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 credits">
+        <p class="copyright-text" style="text-align: center;">Copyright @2023 ABC. All Rights Reserved<br>
+     Powered by e-learning center ABC 
+   </p>
+     </div>
+    
+</footer><!-- #footer -->
+</body>
+</html>
+
+  

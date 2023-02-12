@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>htmlpage</title>
+    <link rel="stylesheet" href="style.css">
+    <!--link fa fa icons-->
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+          /*container styling*/
+  .container1 {
+  display: flex;
+  align-items: center;
+  }
+
+ 
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+/*example images*/
+#album
+  {
+   text-align: center;
+    border-bottom: 3px solid #689F38;   
+    padding: 2px;
+    
+    height: 400px;
+  }
+  /*next example button modify*/
+  #button{
+    border-style:hidden;
+    border-radius: 20px;
+    color: rgb(202, 17, 109);
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+  }
+  /*go to schedule button*/
+  .but {
+    background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-style:hidden;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 40px;
+    text-align:end;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+   
+}
+/*align goto schedule button*/
+.bottom{
+    text-align: end;
+    margin-bottom: 80px;
+}
+p{
+   font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="pictures/logore.png" width="150" height="150"></a> 
+        <!--make navigation-->
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="courseDeatails.html">Course Details</a></li>&nbsp;&nbsp;
+                <li><a href="courseSchedule.html">Course Schedule</a></li>&nbsp;&nbsp;
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+      <!--Making heading to web page-->
+      <div class="container1">
+        <div class="text">
+           <p style="font-size: 60px;">JAVA SCRIPT</p>
+       </div>
+       <div class="image1">
+           <img  src="pictures/javasc1.jpg" style="padding: 160px; width: 80px;height: 80px;">
+       </div>
+   </div>
+   <section >
+    <h2>What is Java Script?</h2>
+    <p style="font-size: 20px;">JavaScript is a lightweight programming language that web developers 
+        commonly use to create more dynamic interactions when developing web pages, applications, servers, and
+         or even games.</p>
+    <p style="font-size: 20px;">Developers generally use JavaScript alongside HTML and CSS The scripting language works well 
+        with CSS in formatting HTML elements. However, JavaScript still maintains user interaction,
+         something that CSS cannot do by itself.</p>
+    
+    <
+    <hr>
+       </section>
+
+       <section>
+        
+<h2>History of JAVA SCRIPT</h2>
+
+<p><b>JavaScript</b> was invented by <b>Brendan Eich</b> in 1995.</p>
+<p>It was developed for <b>Netscape 2</b>, and became the <b>ECMA-262</b> standard in 1997.</p>
+<p>After Netscape handed JavaScript over to ECMA, the Mozilla foundation 
+continued to develop JavaScript for the Firefox browser.
+Mozilla's latest version was 1.8.5. (Identical to ES5).</p>
+<p><b>Internet Explorer</b> (IE4) was the first browser to support ECMA-262 Edition 1 (ES1).</p> 
+<hr>
+       </section>
+       <section>
+
+           <h2>Features of Java SCript</h2>
+           <h3>Scripting</h3>
+           <p>Javascript executes the client-side script in the browser.</p>
+           <h3>Interpreter</h3>
+           <p>The browser interprets JavaScript code.</p>
+           <h3>Event Handling</h3>
+           <p>Events are actions. Javascript provides event-handling options.</p>
+           <h3>Light Weight</h3>
+           <p>As Javascript is not a compiled language, source code never changes to byte code before running time. Low-end devices can also run Javascript because of its lightweight feature.</p>
+           <h3>Case Sensitive</h3>
+           <p>In Javascript, names, variables, keywords, and functions are case-sensitive.</p>
+           <h3>Control Statements</h3>
+           <p>Javascript has control statements like if-else-if, switch case, and loop. Users can write complex code using these control statements.</p>
+           <h3>Objects as first-class Citizens</h3>
+           <p>Javascript arrays, functions, and symbols are objects which can inherit the Object prototype properties. Objects being first-class citizens means Objects can do all tasks.</p>
+           <h3>Supports Functional Programming</h3>
+           <p>Javascript functions can be an argument to another function, can call by reference, and can assign to a variable.</p>
+           <h3>Dynamic Typing</h3>
+           <p>Javascript variables can have any value type. The same variable can have a string value, an integer valu
+       </section>
+
+
+       <section >
+        <h1>Examples</h1>
+        <img id="album" src="pictures/images/javasc3.webp" >
+     <div>
+            <button type="button" onclick="nextslide()" id="button"> Next Example  </button>
+            </div>
+       </section>
+    
+       <!--set button to goto schedule-->
+      
+       <section class="bottom">
+        <a href="javaScriptSc.html">
+            <button class="but">Go to JAVA Script Schedule</button>
+        </a>
+       
+    </section>
+    
+    
+       <!--simple java script to move example-->
+       <script>
+        var images = ["pictures/images/javasc3.webp","pictures/images/javasc1.png","pictures/images/javasc2.png"]
+    var i = 0;
+    function nextslide() { 
+     
+       if(i == 3)
+         {
+           i=0;
+         }
+       
+        document.getElementById("album").src = images[i];
+      i++;
+     
+    }
+    
+       </script>
+    
+       <!--making footer-->
+      <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center order-md-1 mb-3">
+                        <div class="input-group">
+                            <img src="pictures/logore.png" width="250" height="250"> 
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-12 col-md-6 text-center order-md-3">
+                        <p style="font-size: 30px;">ABC <br> Learning</>
+                    </div> 
+                    
+                    
+                    <div class="col-12 col-md-6 text-center order-md-2" style="text-align: end;">
+                        <h1> 
+                            
+                            <a target="_blank" href="https://www.facebook.com/" class="white"><i class="fab fa-facebook-square"></i></a>
+                            <a target="_blank" href="mailto:someone@example.com?Subject=Hello" class="white"> <i  class="fa fa-envelope-open" aria-hidden="true" style="font-size:36px"></i></a>
+                            
+                        </h1> 
+                        
+                    </div>
+                    <div class="col-12 col-md-6 text-center order-md-4" style="text-align: end;">
+                         <p  style="font-size: 30px;font-weight: bold;"><a href="sitemap.html" style="color: black;text-decoration: none;">Site Map /</a> <a href="privacypolicy.html" style="color:black;text-decoration: none;">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 credits">
+            <p class="copyright-text" style="text-align: center;">Copyright @2023 ABC. All Rights Reserved<br>
+         Powered by e-learning center ABC 
+       </p>
+         </div>
+        
+    </footer><!-- #footer -->
+    </body>
+    </html>

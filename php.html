@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>htmlpage</title>
+    <link rel="stylesheet" href="style.css">
+    <!--link fa fa icons-->
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+          /*container styling*/
+  .container1 {
+  display: flex;
+  align-items: center;
+  }
+
+ 
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+/*example images*/
+#album
+  {
+   text-align: center;
+    border-bottom: 3px solid #689F38;   
+    padding: 2px;
+    
+    height: 400px;
+  }
+  /*next example button modify*/
+  #button{
+    border-style:hidden;
+    border-radius: 20px;
+    color: rgb(202, 17, 109);
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+  }
+  /*go to schedule button*/
+  .but {
+    background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-style:hidden;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 40px;
+    text-align:end;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+   
+}
+/*align goto schedule button*/
+.bottom{
+    text-align: end;
+    margin-bottom: 80px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="pictures/logore.png" width="150" height="150"></a> 
+        <!--make navigation-->
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="courseDeatails.html">Course Details</a></li>&nbsp;&nbsp;
+                <li><a href="courseSchedule.html">Course Schedule</a></li>&nbsp;&nbsp;
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+      <!--Making heading to web page-->
+      <div class="container1">
+        <div class="text">
+           <p style="font-size: 60px;">PHP-Hypertext PreProcessor</p>
+       </div>
+       <div class="image1">
+           <img  src="pictures/php1.jpg" style="padding: 160px; width: 80px;height: 80px;">
+       </div>
+   </div>
+   <section >
+       <h1>What is php?</h1>
+       <ul style="font-size: 20px;">
+    
+           <li>PHP is an acronym for "PHP: Hypertext Preprocessor"</li>
+           <li>PHP is a widely-used, open source scripting language</li>
+           <li>PHP scripts are executed on the server</li>
+           <li>PHP is free to download and use</li>
+       </ul>
+       
+       </section>
+
+       <section>
+         <h1>What Can PHP do?</h1>
+         <ul style="font-size: 20px;">
+            <li>PHP can generate dynamic page content</li>
+            <li>PHP can create, open, read, write, delete, and close files on the server</li>
+            <li>PHP can collect form data</li>
+            <li>PHP can send and receive cookies</li>
+            <li>PHP can add, delete, modify data in your database</li>
+            <li>PHP can be used to control user-access</li>
+            <li>PHP can encrypt data</li>
+            <li>With PHP you are not limited to output HTML. You can output images or PDF files. You can also output any text, such as XHTML and XML.</li>
+        </ul>
+       </section>
+
+       <section>
+        <ul style="font-size: 20px;">
+            <li>PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+            <li>PHP is compatible with almost all servers used today (Apache, IIS, etc.)</li>
+            <li>PHP supports a wide range of databases</li>
+            
+            <li>PHP is easy to learn and runs efficiently on the server side</li>
+        </ul>
+       </section>
+
+       <section >
+        <h1>Examples</h1>
+        <img id="album" src="pictures/images/php1.png" >
+     <div>
+            <button type="button" onclick="nextslide()" id="button"> Next Example  </button>
+            </div>
+       </section>
+    
+       <!--set button to goto schedule-->
+      
+       <section class="bottom">
+        <a href="phpSc.html">
+            <button class="but">Go to PHP Schedule</button>
+        </a>
+       
+    </section>
+    
+    
+       <!--simple java script to move example-->
+       <script>
+        var images = ["pictures/images/php1.png","pictures/images/php2.jpg","pictures/images/php3.jpg"]
+    var i = 0;
+    function nextslide() { 
+     
+       if(i == 3)
+         {
+           i=0;
+         }
+       
+        document.getElementById("album").src = images[i];
+      i++;
+     
+    }
+    
+       </script>
+    
+       <!--making footer-->
+      <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center order-md-1 mb-3">
+                        <div class="input-group">
+                            <img src="pictures/logore.png" width="250" height="250"> 
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-12 col-md-6 text-center order-md-3">
+                        <p style="font-size: 30px;">ABC <br> Learning</>
+                    </div> 
+                    
+                    
+                    <div class="col-12 col-md-6 text-center order-md-2" style="text-align: end;">
+                        <h1> 
+                            
+                            <a target="_blank" href="https://www.facebook.com/" class="white"><i class="fab fa-facebook-square"></i></a>
+                            <a target="_blank" href="mailto:someone@example.com?Subject=Hello" class="white"> <i  class="fa fa-envelope-open" aria-hidden="true" style="font-size:36px"></i></a>
+                            
+                        </h1> 
+                        
+                    </div>
+                    <div class="col-12 col-md-6 text-center order-md-4" style="text-align: end;">
+                         <p  style="font-size: 30px;font-weight: bold;"><a href="sitemap.html" style="color: black;text-decoration: none;">Site Map /</a> <a href="privacypolicy.html" style="color:black;text-decoration: none;">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 credits">
+            <p class="copyright-text" style="text-align: center;">Copyright @2023 ABC. All Rights Reserved<br>
+         Powered by e-learning center ABC 
+       </p>
+         </div>
+        
+    </footer><!-- #footer -->
+    </body>
+    </html>

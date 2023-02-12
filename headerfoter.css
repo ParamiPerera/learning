@@ -1,0 +1,36 @@
+#footer .footer-top .btn-subscribe{
+    font-weight: bolder;
+    background-color: var(--white);
+    color: #212b4b;
+    border: none;
+    border-left: 1px solid #212b4b;
+  }
+  
+  #footer .footer-top .btn-subscribe:hover{
+    background-color: #212b4b;
+    color: var(--white);
+    border: 1px solid white;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    color: #fff;
+    
+  }
+  
+  #footer .white{    
+    color: #fff;
+    margin: 15;
+    padding: 5;
+  }
+  
+  #footer .white:hover{    
+    color: rgb(123, 142, 207);
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+  }

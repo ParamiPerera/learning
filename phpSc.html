@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>htmlpage</title>
+    <link rel="stylesheet" href="style.css">
+    <!--link fa fa icons-->
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#top{
+    background-image: linear-gradient(to right top, #f0105e, #f32b6c, #f53d79, #f74c86,
+     #f85992, #f75a95, #f75a98, #f65b9b, #f34e95, #f14090, #ee2f8a, #eb1485);
+}
+
+/*button style for start*/
+.but2{
+    background: #7b4397;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dc2430, #7b4397);
+    border-style:hidden;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer; 
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="pictures/logore.png" width="150" height="150"></a> 
+        <!--make navigation-->
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="courseDeatails.html">Course Details</a></li>&nbsp;&nbsp;
+                <li><a href="courseSchedule.html">Course Schedule</a></li>&nbsp;&nbsp;
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+     
+    <!--make top section-->
+    <section id="top" style="margin-top: 30px;">
+        
+            <!--make free button logo-->
+        <button style="border-radius: 50px;padding: 10px 20px;margin-top: 10px;background-color: #ee0979;">Free</button>
+        <p style="font-size: 80px; font-weight: bolder;text-align: center;">Learning</p>
+        <p style="font-size: 60px;text-align:center;">PHP-Hypertext Preprocessor</p>
+        <p style="font-size: 20px;" >Learn the fundamentals of PHP, one of the most popular languages
+             of modern web development</p>
+            <button class="but2">Start</button>
+    </section>
+
+    <!--make skill section-->
+    <section>
+        <h2>Skills you'll gain</h2>
+        <ul style="font-size: 20px;">
+        <li>Fundamental programming concepts</li>
+        
+        <li>Use PHP with HTML forms</li>
+        
+        <li>Create classes and objects</li>
+        
+    </section>
+
+    <!--make syllabus section-->
+    <section>
+      <h2>Syllabus <a href="https://www.nielit.gov.in/sites/default/files/Patna/Syllabus_of_PHP_&_MY_Sql.pdf">pdf</a></h2>
+      <ol style="font-size: 20px;">
+        <li>Introduction to PHP</li>
+        <li>Decisions and loop</li>
+        <li>Function</li>
+        <li>Handling Html Form with Php</li>
+    </ol>  
+    </section>
+
+    <!--make section  video-->
+    <section>
+        <h2>Video</h2>
+         <div class="row">
+            <div class="column">
+                
+            </div>
+            <div class="column">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sVbEyFZKgqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HrtS-FkPBqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div> 
+    </section>
+   
+
+ <!--making footer-->
+ <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center order-md-1 mb-3">
+                    <div class="input-group">
+                        <img src="pictures/logore.png" width="250" height="250"> 
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-12 col-md-6 text-center order-md-3">
+                    <p style="font-size: 30px;">ABC <br> Learning</>
+                </div> 
+                
+                
+                <div class="col-12 col-md-6 text-center order-md-2" style="text-align: end;">
+                    <h1> 
+                        
+                        <a target="_blank" href="https://www.facebook.com/" class="white"><i class="fab fa-facebook-square"></i></a>
+                        <a target="_blank" href="mailto:someone@example.com?Subject=Hello" class="white"> <i  class="fa fa-envelope-open" aria-hidden="true" style="font-size:36px"></i></a>
+                        
+                    </h1> 
+                    
+                </div>
+                <div class="col-12 col-md-6 text-center order-md-4" style="text-align: end;">
+                     <p  style="font-size: 30px;font-weight: bold;"><a href="sitemap.html" style="color: black;text-decoration: none;">Site Map /</a> <a href="privacypolicy.html" style="color:black;text-decoration: none;">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 credits">
+        <p class="copyright-text" style="text-align: center;">Copyright @2023 ABC. All Rights Reserved<br>
+     Powered by e-learning center ABC 
+   </p>
+     </div>
+    
+</footer><!-- #footer -->
+</body>
+</html>

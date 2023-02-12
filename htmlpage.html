@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>htmlpage</title>
+    <link rel="stylesheet" href="style.css">
+    <!--link fa fa icons-->
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+          /*container styling*/
+  .container1 {
+  display: flex;
+  align-items: center;
+  }
+
+ 
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+/*example images*/
+#album
+  {
+   text-align: center;
+    border-bottom: 3px solid #689F38;   
+    padding: 2px;
+    
+    height: 400px;
+  }
+  /*next example button modify*/
+  #button{
+    border-style:hidden;
+    border-radius: 20px;
+    color: rgb(202, 17, 109);
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+  }
+  /*go to schedule button*/
+  .but {
+    background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-style:hidden;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 40px;
+    text-align:end;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+   
+}
+/*align goto schedule button*/
+.bottom{
+    text-align: end;
+    margin-bottom: 80px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="pictures/logore.png" width="150" height="150"></a> 
+        <!--make navigation-->
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="courseDeatails.html">Course Details</a></li>&nbsp;&nbsp;
+                <li><a href="courseSchedule.html">Course Schedule</a></li>&nbsp;&nbsp;
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+      <!--Making heading to web page-->
+      <div class="container1">
+        <div class="text">
+           <p style="font-size: 60px;">HTML-Hyper text Markup Language</p>
+       </div>
+       <div class="image1">
+           <img  src="pictures/html1 (1).jpg" style="padding: 160px; width: 80px;height: 80px;">
+       </div>
+   </div>
+   <section >
+       <h1>What is HTML?</h1>
+       <ul style="font-size: 20px;">
+           <li>HTML stands for Hyper Text Markup Language</li>
+           <li>HTML is the standard markup language for creating Web pages</li>
+           <li>HTML describes the structure of a Web page</li>
+           <li>HTML consists of a series of elements</li>
+           <li>HTML elements tell the browser how to display the content</li>
+           <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+   </section>
+   <section>
+       <h1>History of HTML</h1>
+       <p style="font-size: 20px;"> The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.</p>
+           
+       <p style="font-size: 20px;">Another version, XHTML, was a rewrite of HTML as an XML language. XML is a standard markup language that is used to create other markup languages. Hundreds of XML languages are in use today, including GML (Geography Markup Language), MathML, MusicML, and RSS (Really Simple Syndication).
+            Since each of these languages was written in a common language (XML), their content can easily be shared across applications. This makes XML potentially very powerful, and it's no surprise that the W3C would create an XML version of HTML (again, called XHTML). XHTML became an official standard in 2000,
+             and was updated in 2002. XHTML is very similar to HTML, but has stricter rules. Strict rules are necessary for all XML languages, because without it, interoperability between applications would be impossible. You'll learn more about the differences between HTML and XHTML in Unit 2.</p>
+           
+       
+       <p style="font-size: 20px;">Most pages on the Web today were built using either HTML 4.01 or XHTML 1.0. However, in recent years, the W3C (in collaboration with another organization, the WHATWG), has been working on a brand new version of HTML, HTML5. Currently (2011), HTML5 is still a draft specification, and is not yet an official standard. However, 
+           it is already widely supported by browsers and other web-enabled devices, and is the way of the future. 
+           Therefore, HTML5 is the primary language taught in this course
+           </p>
+           
+   </section>
+
+   
+   <section >
+    <h1>Examples</h1>
+    <img id="album" src="pictures/images/htm1.jpg" >
+ <div>
+        <button type="button" onclick="nextslide()" id="button"> Next Example  </button>
+        </div>
+   </section>
+
+   <!--set button to goto schedule-->
+  
+   <section class="bottom">
+    <a href="htmlscpage.html">
+        <button class="but">Go to HTML Schedule</button>
+    </a>
+   
+</section>
+
+
+   <!--simple java script to move example-->
+   <script>
+    var images = ["pictures/images/htm1.jpg","pictures/images/htm2.jpeg","pictures/images/htm3.jpg"]
+var i = 0;
+function nextslide() { 
+ 
+   if(i == 3)
+     {
+       i=0;
+     }
+   
+    document.getElementById("album").src = images[i];
+  i++;
+ 
+}
+
+   </script>
+
+   <!--making footer-->
+  <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center order-md-1 mb-3">
+                    <div class="input-group">
+                        <img src="pictures/logore.png" width="250" height="250"> 
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-12 col-md-6 text-center order-md-3">
+                    <p style="font-size: 30px;">ABC <br> Learning</>
+                </div> 
+                
+                
+                <div class="col-12 col-md-6 text-center order-md-2" style="text-align: end;">
+                    <h1> 
+                        
+                        <a target="_blank" href="https://www.facebook.com/" class="white"><i class="fab fa-facebook-square"></i></a>
+                        <a target="_blank" href="mailto:someone@example.com?Subject=Hello" class="white"> <i  class="fa fa-envelope-open" aria-hidden="true" style="font-size:36px"></i></a>
+                        
+                    </h1> 
+                    
+                </div>
+                <div class="col-12 col-md-6 text-center order-md-4" style="text-align: end;">
+                     <p  style="font-size: 30px;font-weight: bold;"><a href="sitemap.html" style="color: black;text-decoration: none;">Site Map /</a> <a href="privacypolicy.html" style="color:black;text-decoration: none;">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 credits">
+        <p class="copyright-text" style="text-align: center;">Copyright @2023 ABC. All Rights Reserved<br>
+     Powered by e-learning center ABC 
+   </p>
+     </div>
+    
+</footer><!-- #footer -->
+</body>
+</html>
